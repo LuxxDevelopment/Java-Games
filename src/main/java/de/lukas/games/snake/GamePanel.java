@@ -7,6 +7,8 @@ import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.util.Random;
+import java.lang.Thread;
+import javax.swing.JOptionPane;
 
 
 public class GamePanel extends JPanel implements ActionListener {
@@ -172,21 +174,46 @@ public class GamePanel extends JPanel implements ActionListener {
         public void keyPressed(KeyEvent e) {
             switch (e.getKeyCode()){
                 case KeyEvent.VK_LEFT:
+                    try {
+                        Thread.sleep(500);
+                        JOptionPane.showMessageDialog(null,"Infozeichen","Titel", JOptionPane.INFORMATION_MESSAGE);
+                    } catch (InterruptedException ex) {
+                        throw new RuntimeException(ex);
+                    }
                     if(direction != 'R') {
                         direction = 'L';
                     }
                     break;
                 case KeyEvent.VK_RIGHT:
+                    try {
+                        Thread.sleep(500);
+                        JOptionPane.showMessageDialog(null,"Infozeichen","Titel", JOptionPane.INFORMATION_MESSAGE);
+                    } catch (InterruptedException ex) {
+                        throw new RuntimeException(ex);
+                    }
                     if(direction != 'L') {
                         direction = 'R';
                     }
                     break;
                 case KeyEvent.VK_UP:
+                    try {
+                        Thread.sleep(500);
+                        JOptionPane.showMessageDialog(null,"Infozeichen","Titel", JOptionPane.INFORMATION_MESSAGE);
+
+                    } catch (InterruptedException ex) {
+                        throw new RuntimeException(ex);
+                    }
                     if(direction != 'D') {
                         direction = 'U';
                     }
                     break;
                 case KeyEvent.VK_DOWN:
+                    try {
+                        Thread.sleep(500);
+                        JOptionPane.showMessageDialog(null,"Infozeichen","Titel", JOptionPane.INFORMATION_MESSAGE);
+                    } catch (InterruptedException ex) {
+                        throw new RuntimeException(ex);
+                    }
                     if(direction != 'U') {
                         direction = 'D';
                     }
