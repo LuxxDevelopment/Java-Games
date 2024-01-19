@@ -1,4 +1,4 @@
-package de.lukas.games.snake;
+package de.lukas.games.snake_with_twist;
 
 public class SnakeGame {
 
@@ -6,4 +6,4 @@ public class SnakeGame {
         new GameFrame();
     }
 }
-/* Snake without a twist */
+/* Snake with a twist */
